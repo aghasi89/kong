@@ -1,0 +1,17 @@
+.running__text__block {
+  background-color: #fcd973;
+  border: 1px solid #000000;
+
+  & .running__text {
+    border: 1px solid #000000;
+    background-color: #ffb032;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    width: 99.8%;
+    margin: 15px 0;
+    padding: 10px 0;
+    cursor: pointer;
+  }
+}
