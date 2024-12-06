@@ -1,14 +1,12 @@
 {
   "files": {
-    "main.css": "/kong/static/css/main.da0e0a77.css",
-    "main.js": "/kong/static/js/main.a6ee24c0.js",
+    "main.css": "/kong/static/css/main.9d83457a.css",
+    "main.js": "/kong/static/js/main.e5eefd8d.js",
     "static/js/453.666af1d9.chunk.js": "/kong/static/js/453.666af1d9.chunk.js",
     "static/media/Kong_Rin2.mp4": "/kong/static/media/Kong_Rin2.fba6f885ae59e661929c.mp4",
     "static/media/kong.jpg": "/kong/static/media/kong.c3189b2756cacafbe4df.jpg",
     "static/media/footerheadtext.svg": "/kong/static/media/footerheadtext.5f888c9d25f920586ee2e199c58935d6.svg",
     "static/media/Fire rocket-vp9-chrome.webm": "/kong/static/media/Fire rocket-vp9-chrome.38c461392917f7d0bd93.webm",
-    "static/media/sec_mob.svg": "/kong/static/media/sec_mob.ac157b54f644599c16e6.svg",
-    "static/media/sec_pict.svg": "/kong/static/media/sec_pict.763cf0f3353e35daee41.svg",
     "static/media/3mobile.svg": "/kong/static/media/3mobile.9de227c4e1df045e6c22fccb80f8e076.svg",
     "static/media/3d.svg": "/kong/static/media/3d.2e914e105a1959d5b025cdddf4f66465.svg",
     "static/media/footerText.svg": "/kong/static/media/footerText.e9b46945b9abcaf5bd6f1c15303117db.svg",
@@ -24,6 +22,7 @@
     "static/media/Kong_Central.jpg": "/kong/static/media/Kong_Central.fb1437a60f136305051d.jpg",
     "static/media/footerbackImg.jpg": "/kong/static/media/footerbackImg.8821602d24920fc2596b.jpg",
     "static/media/Jingleberry.woff": "/kong/static/media/Jingleberry.35ce5b93538c926fdc36.woff",
+    "static/media/srcDesktop.png": "/kong/static/media/srcDesktop.dc7756c3c10a4518c7d0.png",
     "static/media/Syne-SemiBold.woff": "/kong/static/media/Syne-SemiBold.9d03b974e3308fd14a33.woff",
     "static/media/Syne-Bold.woff": "/kong/static/media/Syne-Bold.ce3aa0a9351b9ee6553d.woff",
     "static/media/Syne-Medium.woff": "/kong/static/media/Syne-Medium.a29eb43f09b2b0f93d1e.woff",
@@ -37,6 +36,7 @@
     "static/media/text2.png": "/kong/static/media/text2.be1df300c19ac5f2e587.png",
     "static/media/Syne-Regular.woff2": "/kong/static/media/Syne-Regular.d4e0d9024bb31c64cdde.woff2",
     "static/media/text1.png": "/kong/static/media/text1.44d2889d27fc243238df.png",
+    "static/media/srcMobile.png": "/kong/static/media/srcMobile.fd77d7ea0452fe1ff1d5.png",
     "static/media/static.png": "/kong/static/media/static.69570b6b31159dd132df.png",
     "static/media/kongHead.png": "/kong/static/media/kongHead.dd4a3f1cf5870a235378.png",
     "static/media/four.png": "/kong/static/media/four.50f2e8ccbd3c73bf9790.png",
@@ -44,12 +44,12 @@
     "static/media/second.png": "/kong/static/media/second.da82a3e4feb5c8a78db6.png",
     "static/media/first.png": "/kong/static/media/first.175fcd57e2ba83abdc99.png",
     "index.html": "/kong/index.html",
-    "main.da0e0a77.css.map": "/kong/static/css/main.da0e0a77.css.map",
-    "main.a6ee24c0.js.map": "/kong/static/js/main.a6ee24c0.js.map",
+    "main.9d83457a.css.map": "/kong/static/css/main.9d83457a.css.map",
+    "main.e5eefd8d.js.map": "/kong/static/js/main.e5eefd8d.js.map",
     "453.666af1d9.chunk.js.map": "/kong/static/js/453.666af1d9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.da0e0a77.css",
-    "static/js/main.a6ee24c0.js"
+    "static/css/main.9d83457a.css",
+    "static/js/main.e5eefd8d.js"
   ]
 }
