@@ -1,10 +1,11 @@
 .statisticsSection {
   background-image: url("../../assets/images/kong.jpg");
-  background-size: cover;
+  background-size: 100%;
   background-position:top;
   background-repeat: no-repeat;
-  height: 2130px;;
-  padding: 72px 64px;
+  height: 100vh;;
+  padding: 0 64px 0 0 ;
+
 }
 
 .header {
@@ -44,11 +45,21 @@
 
 .notes {
   z-index: 1;
-  width: 1142px;
-  height: 1001px;
-  margin-top: 20px;
-  display: flex;
-  flex-wrap: wrap;
+  position: absolute;
+  left: calc((46 / 1440)* 100vw);
+  top: 230px;
+  & .row{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: fit-content;
+    height: fit-content;
+    &:nth-child(2){
+      margin-top: -20px;
+      margin-left: 15px;
+    }
+
+  }
 }
 .notesWrapper {
   display: flex;
@@ -100,24 +111,20 @@
 }
 
 .footer {
-  margin-top: 400px;
-  width: 100%;
-  height: 448px;
   display: flex;
   justify-content: center;
   gap: 100px;
 }
 .circle {
-  width: 448px;
-  height: 448px;
+  width: calc(((448) / 1440) * 100vw);
+  height: calc(((448) / 1440) * 100vw);
+  flex-shrink: 0;
   & img {
     width: 100%;
     height: 100%;
   }
 }
 .statics {
-  width: 822px;
-  height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -129,11 +136,14 @@
 }
 .copy {
   margin-top: 29px;
-  width: 781px;
-  height: 274px;
+  width: calc((781 / 1440) * 100vw);
+  height: calc((234 / 1440) * 100vw);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.img{
+  
 }
 .row {
   width: 100%;
@@ -146,29 +156,53 @@
     font-family: "Jingleberry";
     color: rgba(255, 255, 255, 0.64);
   }
+   & .img {
+    width: calc(((324) / 1440) * 100vw);
+    height: calc(((300) / 1440) * 100vw);
+    cursor: pointer;
+    background-size: 100%;
+    &:nth-child(2){
+      margin-left: -45px;
+      margin-top: -20px;
+    }
+    &.img1{
+      background-image: url("../../assets/images/1.png");
+    }
+    &.img2{
+      background-image: url("../../assets/images/2.png");
+    }
+    &.img3{
+      background-image: url("../../assets/images/3.png");
+    }
+    &.img4{
+      background-image: url("../../assets/images/4.png");
+    }
+   }
 }
 .first_row {
   border-radius: 16px;
   width: 286px;
   height: 101px;
-  background-image: url("../../assets/images/copy.png");
-  background-size: cover;
+  background-image: url("../../assets/images/tiker.png");
   background-position: right;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-size: 100%;
 }
 .second_row {
   width: 479px;
   height: 101px;
+  background-image: url("../../assets/images/total.png");
+  
 }
 .sec_row {
-  background-image: url("../../assets/images/copy.png");
+  background-image: url("../../assets/images/address.png");
   display: flex;
   align-items: center;
   justify-content: center;
-  background-size: cover;
+  background-size: 100%;
   background-position: right;
   background-repeat: no-repeat;
   border-radius: 16px;
@@ -184,55 +218,45 @@
   }
 }
 
-@media (max-width: 1440px) {
+@media (min-width: 600px) {
   .statisticsSection {
-    height: 1850px;
+    height: 105vw;
     display: flex;
     align-items: center;
     flex-direction: column;
+    position: relative;
+    justify-content: end;
+    z-index: -1;
+    padding-bottom: 30px;
   }
 
   .header {
-    width: 580px;
-    height: 154px;
-    background-image: url("../../assets/images/mob_four.svg");
+    width: calc(((628) / 1440) * 100vw);
+    height: calc(((98) / 1440) * 100vw);
+    position: absolute;
+    left:calc((66 / 1440) * 100vw);
+    top:100px;
+    background-image: url("../../assets/images/how_to_king.png");
   }
   .footer_head {
     font-size: 78px;
     text-align: center;
   }
   .footer {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    width: 780px;
     margin-top: 0;
-    gap: 0;
+    gap: calc((50 / 1440) * 100vw);
   }
 
   .animated_div {
-    width: 350px;
-    height: 500px;
+    width: 48vw;
+    height: 40vw;
     position: absolute;
-    left: 59%;
-    margin-top: 22%;
+    left: 42.3%;
+    top: 4%;
   }
  
-  .notes {
-    display: flex;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    justify-content: center;
-  }
-
-  .note {
-    width: 100%;
-    flex-shrink: 0;
-    transition: opacity 0.5s ease-in-out;
-    opacity: 0;
-    display: none;
-  }
-
   .note.visible {
     opacity: 1;
     display: flex;
@@ -241,9 +265,9 @@
   }
 
   .dots {
+    display: none;
     position: relative;
     bottom: 280px;
-    display: flex;
     justify-content: center;
     gap: 40px;
   }
@@ -273,7 +297,7 @@
 }
 
 
-@media (max-width: 1024px) {
+@media (max-width: 600px) {
   .statisticsSection {
     background-image: url("../../assets/images/mob_kong.jpg");
     background-position: top;

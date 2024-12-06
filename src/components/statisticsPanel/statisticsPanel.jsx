@@ -129,53 +129,19 @@ export default function StatisticsPanel() {
       <div ref={headerRef} className={`${style.header} ${style.hidden}`}>
       </div>
       <div ref={notesRef} className={`${style.notes} ${style.hidden}`}>
-        <div className={style.notesWrapper}>
-          <div
-            className={`${style.note} ${style.first_note} ${
-              currentNote === 0 ? style.visible : ""
-            }`}
-          >
-            <span>1. Create a Phantom wallet</span>
-            <span className={style.desc}>
-              Visit phantom.app and follow the simple steps to create a new
-              account in the app or browser extension.
-            </span>
+          <div className={style.row}>
+          <div className={`${style.img} ${style.img1}`}>
           </div>
-          <div
-            className={`${style.note} ${style.second_note} ${
-              currentNote === 1 ? style.visible : ""
-            }`}
-          >
-            <span>2. Get some $SOL</span>
-            <span className={style.desc}>
-              Tap the BUY button in the app to purchase Solana, or deposit $SOL
-              to your Phantom wallet from the crypto exchange of your choice.
-            </span>
+          <div className={`${style.img} ${style.img2}`}>
+          
           </div>
-          <div
-            className={`${style.note} ${style.third_note} ${
-              currentNote === 2 ? style.visible : ""
-            }`}
-          >
-            <span>3. Swap $SOL for $KONG</span>
-            <span className={style.desc}>
-              Tap the SWAP icon in your Phantom wallet and paste the $KONG token
-              address. Swap your $SOL for $KONG.
-            </span>
           </div>
-          <div
-            className={`${style.note} ${style.fourth_note} ${
-              currentNote === 3 ? style.visible : ""
-            }`}
-          >
-            <span className={style.four_span}>
-              4. You are now in a $KONG
-              <br /> tribe!
-            </span>
-            <span className={style.four_span}>
-              CONQUER THE BANANA
-              <br /> ZONE!
-            </span>
+          <div className={style.row}>
+          <div  className={`${style.img} ${style.img3}`}>
+            
+          </div>
+          <div className={`${style.img} ${style.img4}`}> 
+           
           </div>
         </div>
       </div>
@@ -190,9 +156,9 @@ export default function StatisticsPanel() {
           />
         ))}
       </div>
-     {/* <div className={style.animated_div}>
+     <div className={style.animated_div}>
        <Lottie options={lottieOptions}/>
-     </div> */}
+     </div>
       <div ref={footerRef} className={`${style.footer} ${style.hidden}`}>
         <div className={style.circle}>
           <img src={circle} />
@@ -202,14 +168,14 @@ export default function StatisticsPanel() {
           <div className={style.copy}>
             <div className={style.row}>
               <div className={style.first_row}>
-                <span>Ticker: $KONG</span>
+               
               </div>
               <div className={`${style.first_row} ${style.second_row}`}>
-                <span>Total Supply - 1,000,000,000</span>
+               
               </div>
             </div>
             <div className={`${style.row} ${style.sec_row}`}>
-              <span>CA: {shortenedAddress}</span>
+              
               <img src={currentImage} alt="Copy" onClick={copyToClipboard} />
             </div>
           </div>

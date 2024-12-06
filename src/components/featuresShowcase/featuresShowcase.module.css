@@ -44,7 +44,7 @@
 }
 .running__text {
   position: absolute;
-  bottom: 0;
+  bottom: -50px;
 }
 
 @media (max-width: 998px) {

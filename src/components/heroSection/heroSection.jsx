@@ -5,7 +5,7 @@ import kongText from "../../assets/images/headertext1.svg";
 import kongText2 from "../../assets/images/headertext2.svg";
 import kongTextMobile1 from "../../assets/images/headertextmob1.svg";
 import kongTextMobile2 from "../../assets/images/headertextmob2.svg";
-import animationKong from "../../assets/videos/Kong_Rin2.mp4";
+import animationKong from "../../assets/videos/Kong_Ring.mp4";
 import style from "./heroSection.module.css";
 import {Link} from "react-router";
 import {svgIcons} from "../../assets/svgIcons";

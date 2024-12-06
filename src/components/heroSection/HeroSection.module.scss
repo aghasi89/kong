@@ -7,18 +7,18 @@
   justify-content: space-between;
 
   @include desktop {
-    padding: 32px 32px 0;
+    padding: 17.5px 17.5px 0;
   }
 
   .logo {
     display: block;
     text-decoration: none;
-    width: 54px;
-    height: 54px;
+    width: calc(((100) / 1440) * 100vw);
+    height: calc(((100) / 1440) * 100vw);
 
     @include desktop {
-      width: 100px;
-      height: 100px;
+      width: calc(((54) / 375) * 100vw);
+      height: calc(((54) / 375) * 100vw);
     }
 
     img {
@@ -33,19 +33,18 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 96px;
+    top: calc(96px + (32 / 1440) * 100vw);
     border: 1px solid #000;
     border-radius: 10px;
     box-shadow: 0 2px 0 0 #000;
     background: #fcd973;
-    width: 339px;
-    height: 160px;
+    width: calc((339 / 375) * 100vw);
+    height: calc(((160) / 375) * 100vw);
     transition: 0.3s;
-
-    @include desktop {
+    @media (min-width: 600px) {
       top: 32px;
-      width: 464px;
-      height: 219px;
+      width: calc(((464) / 1440) * 100vw);
+      height: calc(((219) / 1440) * 100vw);
       border-radius: 14px;
     }
 
@@ -68,10 +67,9 @@
 
   .text2Wrapper {
     img {
-      width: 273px;
-
-      @include desktop {
-        width: 409px;
+      width: calc((265 / 375) * 100vw);
+      @media (min-width: 600px) {
+        width: calc(((409) / 1440) * 100vw);
       }
     }
   }
@@ -82,14 +80,16 @@
     .socialLink {
       display: block;
       background: #FFF;
-      width: 48px;
-      height: 50px;
+      width: calc((64 / 1440) * 100vw);
+      height: calc((66 / 1440) * 100vw);
+      
       border-radius: 12px;
       padding: 1px 1px 3px;
 
       @include desktop {
-        width: 64px;
-        height: 66px;
+        
+        width: calc((48 / 375) * 100vw);
+        height: calc((50 / 375) * 100vw);
         border-radius: 12px;
         padding: 2px 2px 4px;
       }

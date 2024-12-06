@@ -2,19 +2,19 @@
 
 .textWrapper {
   position: absolute;
-  bottom: calc(75px + (28 / 375) * 100vw);
+  bottom: calc(25px + (28 / 375) * 100vw);
   left: 50%;
   transform: translateX(-50%);
-  width: calc((339 / 375) * 100vw);
-  height: calc((148 / 375) * 100vw);
+  width: calc((271.2 / 375) * 100vw);
+  height: calc(((148*0.8) / 375) * 100vw);
 
   @media (min-width: 999px) {
     left: auto;
-    width: calc((521 / 1440) * 100vw);
-    height: calc((204 / 1440) * 100vw);
+    width: calc(((521*0.8) / 1440) * 100vw);
+    height: calc(((204*0.8) / 1440) * 100vw);
     transform: none;
     right: calc((87 / 1440) * 100vw);
-    bottom: calc(75px + (35 / 1440) * 100vw);
+    bottom: calc(25px + (35 / 1440) * 100vw);
   }
 
   .textMobile, .textDesktop {

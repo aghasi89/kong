@@ -9,8 +9,8 @@ export default function Screens() {
       <HeroSection />
       <CityOverview />
       <FeaturesShowcase />
-      {/*<StatisticsPanel />*/}
-      {/*<FooterSection />*/}
+      <StatisticsPanel />
+      <FooterSection />
     </div>
   );
 }
