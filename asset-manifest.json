@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/kong/static/css/main.9d83457a.css",
-    "main.js": "/kong/static/js/main.e5eefd8d.js",
+    "main.css": "/kong/static/css/main.ca264974.css",
+    "main.js": "/kong/static/js/main.c2ae3fc3.js",
     "static/js/453.666af1d9.chunk.js": "/kong/static/js/453.666af1d9.chunk.js",
     "static/media/Kong_Rin2.mp4": "/kong/static/media/Kong_Rin2.fba6f885ae59e661929c.mp4",
     "static/media/kong.jpg": "/kong/static/media/kong.c3189b2756cacafbe4df.jpg",
@@ -28,6 +28,7 @@
     "static/media/Syne-Medium.woff": "/kong/static/media/Syne-Medium.a29eb43f09b2b0f93d1e.woff",
     "static/media/Syne-ExtraBold.woff": "/kong/static/media/Syne-ExtraBold.41395fe62cc4a5b1f9bf.woff",
     "static/media/Syne-Regular.woff": "/kong/static/media/Syne-Regular.630e1f9d3dcc03c4c144.woff",
+    "static/media/textDesktop.png": "/kong/static/media/textDesktop.0478821f0c1cd443c4f4.png",
     "static/media/Jingleberry.woff2": "/kong/static/media/Jingleberry.3779430ab93ca8df7d8a.woff2",
     "static/media/Syne-SemiBold.woff2": "/kong/static/media/Syne-SemiBold.4df6a9025710e99fdef0.woff2",
     "static/media/Syne-Bold.woff2": "/kong/static/media/Syne-Bold.e0620077ae54ca70f144.woff2",
@@ -38,18 +39,19 @@
     "static/media/text1.png": "/kong/static/media/text1.44d2889d27fc243238df.png",
     "static/media/srcMobile.png": "/kong/static/media/srcMobile.fd77d7ea0452fe1ff1d5.png",
     "static/media/static.png": "/kong/static/media/static.69570b6b31159dd132df.png",
+    "static/media/textMobile.png": "/kong/static/media/textMobile.f7b7e1565ae3a0b634da.png",
     "static/media/kongHead.png": "/kong/static/media/kongHead.dd4a3f1cf5870a235378.png",
     "static/media/four.png": "/kong/static/media/four.50f2e8ccbd3c73bf9790.png",
     "static/media/three.png": "/kong/static/media/three.c5d4fed03c3c092a29a6.png",
     "static/media/second.png": "/kong/static/media/second.da82a3e4feb5c8a78db6.png",
     "static/media/first.png": "/kong/static/media/first.175fcd57e2ba83abdc99.png",
     "index.html": "/kong/index.html",
-    "main.9d83457a.css.map": "/kong/static/css/main.9d83457a.css.map",
-    "main.e5eefd8d.js.map": "/kong/static/js/main.e5eefd8d.js.map",
+    "main.ca264974.css.map": "/kong/static/css/main.ca264974.css.map",
+    "main.c2ae3fc3.js.map": "/kong/static/js/main.c2ae3fc3.js.map",
     "453.666af1d9.chunk.js.map": "/kong/static/js/453.666af1d9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9d83457a.css",
-    "static/js/main.e5eefd8d.js"
+    "static/css/main.ca264974.css",
+    "static/js/main.c2ae3fc3.js"
   ]
 }
