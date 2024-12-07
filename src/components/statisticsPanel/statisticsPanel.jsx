@@ -158,7 +158,7 @@ export default function StatisticsPanel() {
         ))}
       </div>
      <div className={style.animated_div}>
-       <Lottie options={lottieOptions}/>
+       <Lottie options={lottieOptions} isClickToPauseDisabled={true}/>
      </div>
       <div ref={footerRef} className={`${style.footer} ${style.hidden}`}>
         {isMobile && (<span className={style.footer_head}>KONGENOMICS</span>)}
