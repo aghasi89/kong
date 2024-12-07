@@ -45,6 +45,7 @@
 .running__text {
   position: absolute;
   bottom: -50px;
+  z-index: 5;
 }
 
 @media (max-width: 998px) {

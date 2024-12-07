@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import RunningText from "../runningText/runningText";
-import kongHeadImg from "../../assets/images/footer_king.png";
+import kongHeadImg from "../../assets/images/footer_king_d.png";
 import twitterImg from "../../assets/images/defaulttw.png";
 import telegramImg from "../../assets/images/defaulttele.png";
 import animationData from "../../assets/animations/fire.json";

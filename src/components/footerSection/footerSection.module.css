@@ -56,7 +56,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    border-top: 2px solid #000;
     & .head__and__text {
       width: 25%;
 
@@ -122,10 +122,11 @@ footer {
 .copyright {
   display: flex;
   justify-content: end;
-  padding: 0 30px 30px 0;
+  padding: 20px 30px 30px 0;
   color: rgba(0, 0, 0, 0.678);
   font-size: 18px;
   font-family: Jingleberry;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.678);
 }
 
 @media (max-width: 1560px) {
@@ -203,7 +204,7 @@ footer {
 
   .footer__flex {
     padding: 30px 30px 0 30px;
-
+    
     & .head__and__text {
       width: 30% !important;
     }
@@ -239,7 +240,7 @@ footer {
 
   .copyright {
     justify-content: center;
-    padding: 0px 30px 30px 0;
+    padding: 20px 30px 30px 0;
     font-size: 18px;
   }
 }
@@ -283,7 +284,6 @@ footer {
     width: 35vw;
   }
   .content {
-    
     & img {
       content: url("../../assets/images/it_is_time_desktop.png");
     }

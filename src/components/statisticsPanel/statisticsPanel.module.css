@@ -226,7 +226,6 @@
     flex-direction: column;
     position: relative;
     justify-content: end;
-    z-index: -1;
     padding-bottom: 30px;
   }
 
@@ -402,7 +401,7 @@
   .animated_div {
     width: 125vw;
     height: 125vw;
-    transform: translate(8px,35px);
+    transform: translate(8px,70px);
   }
   .note.visible {
     opacity: 1;
@@ -412,11 +411,12 @@
   }
 
   .dots {
-    position: static;
-    bottom: 364px;
+    position: relative;
     display: flex;
     justify-content: center;
     gap: 40px;
+    margin-top: -40px;
+    
   }
 
   .dots::before {
@@ -435,6 +435,7 @@
     background-color: rgba(255, 255, 255, 0.5);
     border: 3px solid black;
     cursor: pointer;
+    z-index: 2;
   }
 
   .dot.active {

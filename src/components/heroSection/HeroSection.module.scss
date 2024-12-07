@@ -85,18 +85,16 @@
 
     .socialLink {
       display: block;
-      background: #FFF;
       width: calc((64 / 1440) * 100vw);
       height: calc((66 / 1440) * 100vw);
       
-      border-radius: 12px;
+      border-radius: calc((12 / 1440) * 100vw);
       padding: 1px 1px 3px;
 
       @include desktop {
-        
         width: calc((48 / 375) * 100vw);
         height: calc((50 / 375) * 100vw);
-        border-radius: 12px;
+        border-radius: calc((12 / 379) * 100vw);
         padding: 2px 2px 4px;
       }
 
@@ -104,30 +102,31 @@
         @include centerRow;
         width: 100%;
         height: 100%;
-        border-radius: 12px;
+        border-radius: calc((12 / 1440) * 100vw);
         fill: #fcd973;
         border: 1px solid #000;
         box-shadow: 0 2px 0 0 #000;
         background: #fcd973;
         transition: 0.3s;
+        @include desktop {
+          border-radius: calc((12 / 379) * 100vw);
+        }
       }
 
       &:nth-child(1) {
-        transform: rotate(-4deg);
-
         svg {
-          width: 16px;
-          height: 16px;
+          width: 100%;
+          height: 40%;
 
           @include desktop {
-            width: 21px;
-            height: 21px;
+            width: calc((21 / 375) * 100vw);
+            height: calc((21 / 375) * 100vw);
           }
         }
       }
 
       &:nth-child(2) {
-        transform: rotate(4deg);
+       
         margin-left: 8px;
 
         @include desktop {
@@ -135,12 +134,12 @@
         }
 
         svg {
-          width: 20px;
-          height: 16px;
+          width: 100%;
+          height: 40%;
 
           @include desktop {
-            width: 28px;
-            height: 23px;
+            width: calc((28 / 375) * 100vw);
+            height: calc((23 / 375) * 100vw);
           }
         }
       }
