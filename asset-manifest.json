@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/kong/static/css/main.5f9a4aa2.css",
+    "main.css": "/kong/static/css/main.b8ca939d.css",
     "main.js": "/kong/static/js/main.61a48975.js",
     "static/js/453.666af1d9.chunk.js": "/kong/static/js/453.666af1d9.chunk.js",
     "static/media/Kong_Ring.mp4": "/kong/static/media/Kong_Ring.dbec55852ff0699037df.mp4",
@@ -56,12 +56,12 @@
     "static/media/tiker.png": "/kong/static/media/tiker.fc9ce345afe0337e259f.png",
     "static/media/m_tiker.png": "/kong/static/media/m_tiker.4146bd87deb713fd6a97.png",
     "index.html": "/kong/index.html",
-    "main.5f9a4aa2.css.map": "/kong/static/css/main.5f9a4aa2.css.map",
+    "main.b8ca939d.css.map": "/kong/static/css/main.b8ca939d.css.map",
     "main.61a48975.js.map": "/kong/static/js/main.61a48975.js.map",
     "453.666af1d9.chunk.js.map": "/kong/static/js/453.666af1d9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5f9a4aa2.css",
+    "static/css/main.b8ca939d.css",
     "static/js/main.61a48975.js"
   ]
 }
