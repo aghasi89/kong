@@ -23,8 +23,14 @@ export default function StatisticsPanel() {
 
   const [touchStart, setTouchStart] = useState(0); 
   const [touchEnd, setTouchEnd] = useState(0); 
-
+  const [isMobile, setIsMobile] = useState(false);
   const updateAddressBasedOnScreenSize = () => {
+    if(window.innerWidth <= 600) {
+      setIsMobile(true);
+    }
+    else {
+      setIsMobile(false);
+    }
     if (window.innerWidth <= 1024) {
       setShortenedAddress(
         `${contractAddress.slice(0, 6)}...${contractAddress.slice(-3)}`
@@ -130,19 +136,12 @@ export default function StatisticsPanel() {
       </div>
       <div ref={notesRef} className={`${style.notes} ${style.hidden}`}>
           <div className={style.row}>
-          <div className={`${style.img} ${style.img1}`}>
-          </div>
-          <div className={`${style.img} ${style.img2}`}>
-          
-          </div>
+          {(!isMobile || currentNote===0) && <div className={`${style.img} ${style.img1}`}></div>}
+          {(!isMobile || currentNote===1) && <div className={`${style.img} ${style.img2}`}></div>}
           </div>
           <div className={style.row}>
-          <div  className={`${style.img} ${style.img3}`}>
-            
-          </div>
-          <div className={`${style.img} ${style.img4}`}> 
-           
-          </div>
+          {(!isMobile || currentNote===2) && <div className={`${style.img} ${style.img3}`}></div>}
+          {(!isMobile || currentNote===3) && <div className={`${style.img} ${style.img4}`}></div>}
         </div>
       </div>
       <div className={style.dots}>
@@ -160,11 +159,12 @@ export default function StatisticsPanel() {
        <Lottie options={lottieOptions}/>
      </div>
       <div ref={footerRef} className={`${style.footer} ${style.hidden}`}>
+        {isMobile && (<span className={style.footer_head}>KONGENOMICS</span>)}
         <div className={style.circle}>
           <img src={circle} />
         </div>
         <div className={style.statics}>
-          <span className={style.footer_head}>KONGENOMICS</span>
+          {!isMobile && <span className={style.footer_head}>KONGENOMICS</span>}
           <div className={style.copy}>
             <div className={style.row}>
               <div className={style.first_row}>

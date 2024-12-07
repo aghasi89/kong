@@ -47,7 +47,7 @@
   z-index: 1;
   position: absolute;
   left: calc((46 / 1440)* 100vw);
-  top: 230px;
+  top: calc(70px + (190 / 1440)* 100vw);
   & .row{
     display: flex;
     justify-content: center;
@@ -135,7 +135,7 @@
   font-family: "Jingleberry";
 }
 .copy {
-  margin-top: 29px;
+  margin-top: calc((29 / 1440) * 100vw);
   width: calc((781 / 1440) * 100vw);
   height: calc((234 / 1440) * 100vw);
   display: flex;
@@ -147,7 +147,7 @@
 }
 .row {
   width: 100%;
-  height: 120px;
+  height: calc(((120) / 1440) * 100vw);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -181,8 +181,8 @@
 }
 .first_row {
   border-radius: 16px;
-  width: 286px;
-  height: 101px;
+  width: calc(((286) / 1440) * 100vw);
+  height: calc(((101) / 1440) * 100vw);
   background-image: url("../../assets/images/tiker.png");
   background-position: right;
   background-repeat: no-repeat;
@@ -192,8 +192,8 @@
   background-size: 100%;
 }
 .second_row {
-  width: 479px;
-  height: 101px;
+  width: calc(((476) / 1440) * 100vw);
+  height: calc(((101) / 1440) * 100vw);
   background-image: url("../../assets/images/total.png");
   
 }
@@ -239,7 +239,7 @@
     background-image: url("../../assets/images/how_to_king.png");
   }
   .footer_head {
-    font-size: 78px;
+    font-size: calc((128 / 1440) * 100vw);
     text-align: center;
   }
   .footer {
@@ -299,71 +299,93 @@
 
 @media (max-width: 600px) {
   .statisticsSection {
-    background-image: url("../../assets/images/mob_kong.jpg");
+    background-image: url("../../assets/images/mob_kong.png");
     background-position: top;
-    height: 3300px;
+    height: auto;
   }
   .footer{
     margin-top: 1300px;
   }
   .row {
     flex-direction: column;
-    height: 250px;
+    gap: calc((20 / 379) * 100vw);
+    height: auto
   }
   .first_row {
-    width: 460px;
-    margin-bottom: 20px;
+    width: 100%;
+    height: calc((75 / 379) * 100vw);
+    background-image: url("../../assets/images/m_tiker.png");
   }
   .second_row {
-    width: 460px;
+    width: 100%;
     text-align: center;
+    height: calc((118 / 379) * 100vw);
+    background-image: url("../../assets/images/m_total.png");
   }
   .sec_row {
-    width: 460px;
+    width: 100%;
     display: flex;
     flex-direction: row;
+    height: calc((91 / 379) * 100vw);
+    background-image: url("../../assets/images/m_address.png");
   }
   .copy {
     align-items: center;
-    width: 830px;
-    height: 343px;
+    gap: calc((20 / 379) * 100vw);
+    height: auto;
   }
   .circle {
-    margin-top: 100px;
+    width: calc((316 / 379) * 100vw);
+    height: calc((316 / 379) * 100vw);
   }
   .footer_head {
-    font-size: 48px;
+    font-size: calc((50 / 379) * 100vw);
     text-align: center;
-    margin-top: 30px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
+
   .statisticsSection {
-    background-image: url("../../assets/images/mob_kong.jpg");
-    background-position: top;
-    height: 3000px;
+    background-image: url("../../assets/images/mob_kong.png");
+    background-position: 0px 140px;
+    background-color: #a8ced9;
+    padding: 0px calc((10 / 379)* 100vw);
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
   }
   .header {
-    width: 300px;
-    height: 64px;
+    width: calc((339 / 379)* 100vw);
+    height: calc((72 / 379)* 100vw);
     background-size: contain;
   }
   .footer {
     flex-direction: column;
     align-items: center;
     width: 340px;
-    margin-top: 1100px;
+    gap:calc((32 / 379)* 100vw);
+    margin-top: calc((250 / 379)* 100vw);
   }
   .copy {
-    width: 460px;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 20px;
   }
   .notes {
     display: flex;
     width: 100%;
     overflow: hidden;
-    position: relative;
+    position: static;
     justify-content: center;
+    margin-top: 30px;
+    height: calc(((300) / 379)* 100vw);;
+    & .img {
+      width: calc(((285) / 379)* 100vw);
+      height: calc(((256) / 379)* 100vw);
+    }
   }
 
   .note {
@@ -373,7 +395,10 @@
     opacity: 0;
     display: none;
   }
-
+  .animated_div {
+    width: 125vw;
+    height: 125vw;
+  }
   .note.visible {
     opacity: 1;
     display: flex;
@@ -382,7 +407,7 @@
   }
 
   .dots {
-    position: relative;
+    position: static;
     bottom: 364px;
     display: flex;
     justify-content: center;
@@ -412,68 +437,6 @@
   }
 
   .statics {
-    width: 458px;
+    width: calc((285 / 379)* 100vw);
   }
-}
-
-
-@media (max-width: 480px) {
-
-
-  .footer {
-    flex-direction: column;
-    align-items: center;
-    width: 350px;
-    margin-top: 800px;
-  }
-  .header {
-    width: 300px;
-    height: 64px;
-    background-size: contain;
-  }
-  .copy {
-    width: 360px;
-  }
-  .statics {
-    width: 360px;
-  }
-
-  .first_row {
-    width: 300px;
-    margin-bottom: 20px;
-  }
-  .second_row {
-    width: 300px;
-    text-align: center;
-  }
-  .sec_row {
-    width: 300px;
-    display: flex;
-    flex-direction: row;
-  }
-
-  .note {
-    & span {
-      font-size: 28px;
-    }
-  }
-
-  .desc {
-    font-size: 18px !important;
-    width: 80% !important;
-  }
-  .circle {
-  width: 100%;
-  height: 100%;
-  }
-  .footer_head {
-    font-size: 38px;
-    text-align: center;
-    margin-top: 30px;
-  }
-  .note.visible{
-    width: 300px;
-    height: 390px;
-  }
-  
 }
