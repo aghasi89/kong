@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/kong/static/css/main.91565e45.css",
-    "main.js": "/kong/static/js/main.98755311.js",
+    "main.css": "/kong/static/css/main.6e342076.css",
+    "main.js": "/kong/static/js/main.1fcdd32a.js",
     "static/js/453.666af1d9.chunk.js": "/kong/static/js/453.666af1d9.chunk.js",
     "static/media/Kong_Ring.mp4": "/kong/static/media/Kong_Ring.dbec55852ff0699037df.mp4",
     "static/media/footerheadtext.svg": "/kong/static/media/footerheadtext.5f888c9d25f920586ee2e199c58935d6.svg",
@@ -13,12 +13,12 @@
     "static/media/footertextmob.svg": "/kong/static/media/footertextmob.89471fe63b75cac2baae.svg",
     "static/media/desc_four.svg": "/kong/static/media/desc_four.f14971ef4c3489478028.svg",
     "static/media/footersectionImg.jpg": "/kong/static/media/footersectionImg.81e20ec135c795c230bc.jpg",
-    "static/media/mob_kong.jpg": "/kong/static/media/mob_kong.19594a6fc90f03ab420a.jpg",
     "static/media/headertext2.svg": "/kong/static/media/headertext2.307b2bd7f74c5be6453423c125455356.svg",
     "static/media/headertextmob2.svg": "/kong/static/media/headertextmob2.3fc98f23df3c93456baf57b34aa6101f.svg",
     "static/media/headertext1.svg": "/kong/static/media/headertext1.9ebe1bd4fac63a89d4d54d57f2a76240.svg",
     "static/media/headertextmob1.svg": "/kong/static/media/headertextmob1.b971cad4152c22a4e568ca5b67620f18.svg",
     "static/media/kongHead.png": "/kong/static/media/kongHead.ac352f6f444ea6512bbc.png",
+    "static/media/mob_kong.png": "/kong/static/media/mob_kong.9fc67e083ae45d0b21b0.png",
     "static/media/Kong_Central.jpg": "/kong/static/media/Kong_Central.fb1437a60f136305051d.jpg",
     "static/media/footerbackImg.jpg": "/kong/static/media/footerbackImg.8821602d24920fc2596b.jpg",
     "static/media/4.png": "/kong/static/media/4.0e3369cd8746256e2787.png",
@@ -48,17 +48,18 @@
     "static/media/total.png": "/kong/static/media/total.9702dbb3a0b5711304e9.png",
     "static/media/three.png": "/kong/static/media/three.c5d4fed03c3c092a29a6.png",
     "static/media/second.png": "/kong/static/media/second.da82a3e4feb5c8a78db6.png",
-    "static/media/address.png": "/kong/static/media/address.183746ceaafa0369363a.png",
     "static/media/first.png": "/kong/static/media/first.175fcd57e2ba83abdc99.png",
+    "static/media/m_total.png": "/kong/static/media/m_total.e4c2242cff2945706b8d.png",
     "static/media/how_to_king.png": "/kong/static/media/how_to_king.c3150025b5b1a5ed9a23.png",
     "static/media/tiker.png": "/kong/static/media/tiker.fc9ce345afe0337e259f.png",
+    "static/media/m_tiker.png": "/kong/static/media/m_tiker.4146bd87deb713fd6a97.png",
     "index.html": "/kong/index.html",
-    "main.91565e45.css.map": "/kong/static/css/main.91565e45.css.map",
-    "main.98755311.js.map": "/kong/static/js/main.98755311.js.map",
+    "main.6e342076.css.map": "/kong/static/css/main.6e342076.css.map",
+    "main.1fcdd32a.js.map": "/kong/static/js/main.1fcdd32a.js.map",
     "453.666af1d9.chunk.js.map": "/kong/static/js/453.666af1d9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.91565e45.css",
-    "static/js/main.98755311.js"
+    "static/css/main.6e342076.css",
+    "static/js/main.1fcdd32a.js"
   ]
 }
