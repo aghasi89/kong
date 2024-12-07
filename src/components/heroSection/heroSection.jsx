@@ -24,7 +24,11 @@ export default function HeroSection() {
     const [showText2, setShowText2] = useState(false);
 
     const onPlay = () => setTimeout(() => setShowText1(false), 2500);
-    const onEnded = () => setShowText2(true);
+    const onEnded = () => {
+        setShowText2(true)
+        videoRef.current.loop = true;
+        videoRef.current.play();
+    };
 
     useEffect(() => {
         const videoElement = videoRef.current;
@@ -79,7 +83,7 @@ export default function HeroSection() {
                     </Link>
 
 
-                    <div className={style2.text1Wrapper}
+                    <div className={style2.text2Wrapper}
                          style={{
                              opacity: showText1 ? 1 : 0
                          }}
@@ -92,7 +96,7 @@ export default function HeroSection() {
                              opacity: showText2 ? 1 : 0
                          }}
                     >
-                        <img src={text2Src} alt=""/>
+                        <img src={text2Src} />
                     </div>
 
                     <div className={style2.socialLinks}>

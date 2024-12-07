@@ -82,17 +82,17 @@ export default function FeaturesShowcase() {
                 <div
                     className={`${style["kong-section-item"]} ${style["kong-section-left"]}`}
                 >
-                    <Lottie options={lottieOptions}/>
+                    <Lottie options={lottieOptions} isClickToPauseDisabled={true}/>
                 </div>
                 <div
                     className={`${style["kong-section-item"]} ${style["kong-section-center"]}`}
                 >
-                    <Lottie options={lottieOptions2}/>
+                    <Lottie options={lottieOptions2} isClickToPauseDisabled={true}/>
                 </div>
                 <div
                     className={`${style["kong-section-item"]} ${style["kong-section-right"]}`}
                 >
-                    <Lottie options={lottieOptions3}/>
+                    <Lottie options={lottieOptions3} isClickToPauseDisabled={true}/>
                 </div>
             </div>
 

@@ -27,7 +27,13 @@
       height: auto;
     }
   }
-
+.text2WrapperImage{
+  width: calc((265 / 375) * 100vw);
+  @media (min-width: 600px) {
+    width: calc(((409) / 1440) * 100vw);
+  }
+}
+  
   .text1Wrapper, .text2Wrapper {
     @include centerRow;
     position: absolute;

@@ -152,7 +152,7 @@
   justify-content: space-between;
   align-items: center;
   & span {
-    font-size: 26px;
+    font-size: calc((32 / 1440) * 100vw);
     font-family: "Jingleberry";
     color: rgba(255, 255, 255, 0.64);
   }
@@ -302,6 +302,7 @@
     background-image: url("../../assets/images/mob_kong.png");
     background-position: top;
     height: auto;
+    overflow: hidden;
   }
   .footer{
     margin-top: 1300px;
@@ -309,7 +310,10 @@
   .row {
     flex-direction: column;
     gap: calc((20 / 379) * 100vw);
-    height: auto
+    height: auto;
+    & span {
+      font-size: calc((32 / 379) * 100vw);
+    }
   }
   .first_row {
     width: 100%;
@@ -367,7 +371,7 @@
     align-items: center;
     width: 340px;
     gap:calc((32 / 379)* 100vw);
-    margin-top: calc((250 / 379)* 100vw);
+    margin-top: calc((330 / 379)* 100vw);
   }
   .copy {
     width: 100%;
@@ -398,6 +402,7 @@
   .animated_div {
     width: 125vw;
     height: 125vw;
+    transform: translate(8px,35px);
   }
   .note.visible {
     opacity: 1;

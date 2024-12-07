@@ -31,7 +31,7 @@ export default function StatisticsPanel() {
     else {
       setIsMobile(false);
     }
-    if (window.innerWidth <= 1024) {
+    if (window.innerWidth <= 600) {
       setShortenedAddress(
         `${contractAddress.slice(0, 6)}...${contractAddress.slice(-3)}`
       );
@@ -50,6 +50,8 @@ export default function StatisticsPanel() {
   }, []);
 
   const copyToClipboard = () => {
+    console.log("copying to clipboard");
+    
     navigator.clipboard
       .writeText(contractAddress)
       .then(() => {
@@ -174,9 +176,9 @@ export default function StatisticsPanel() {
                
               </div>
             </div>
-            <div className={`${style.row} ${style.sec_row}`}>
-              
-              <img src={currentImage} alt="Copy" onClick={copyToClipboard} />
+            <div className={`${style.row} ${style.sec_row}`} onClick={copyToClipboard}>
+              <span>CA: {shortenedAddress}</span>
+              <img src={currentImage} alt="Copy"  />
             </div>
           </div>
         </div>
