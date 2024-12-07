@@ -3,11 +3,13 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left bottom;
-  height: 1400px;
+  height: calc((900/379)*100vw);
   padding: 70px 100px 0 100px;
 }
+
 .content {
   width: 584px;
+
   & img {
     width: 100%;
     height: 100%;
@@ -25,22 +27,30 @@
   opacity: 1;
   transform: translateX(0);
 }
+
 .media__block {
   display: none;
 }
+
 .footer__video {
   display: flex;
   justify-content: end;
   width: 100%;
   margin-top: -100px;
+
   & video {
     width: 800px;
     height: 800px;
   }
 }
 
+.animation_data {
+  margin-top: -50px;
+}
+
 footer {
   background-color: #fcd973;
+
   & .footer__flex {
     padding: 30px 30px 0 30px;
     display: flex;
@@ -49,6 +59,7 @@ footer {
 
     & .head__and__text {
       width: 25%;
+
       & img {
         width: 100%;
         height: 100%;
@@ -58,6 +69,7 @@ footer {
 
     & .icon {
       width: 50%;
+
       & .tele__and__tw {
         display: flex;
         gap: 10px;
@@ -78,6 +90,7 @@ footer {
     }
   }
 }
+
 .tele__blok {
   & img:hover {
     cursor: pointer;
@@ -91,18 +104,21 @@ footer {
     content: url("../../assets/images/tg_4.png");
   }
 }
+
 .twitter__blok {
   & img:hover {
     cursor: pointer;
     content: url("../../assets/images/twitter2.png");
   }
 }
+
 .twitter__blok {
   & img:active {
     color: #bd7400;
     content: url("../../assets/images/tw_4.png");
   }
 }
+
 .copyright {
   display: flex;
   justify-content: end;
@@ -117,9 +133,11 @@ footer {
     background-position: 25% bottom;
     padding: 70px 40px 0 100px;
   }
+
   .footer__video {
     justify-content: end;
     margin-top: -100px;
+
     & video {
       width: 700px;
       height: 700px;
@@ -131,6 +149,7 @@ footer {
   .footer__video {
     justify-content: end;
     margin-top: -100px;
+
     & video {
       width: 600px;
       height: 600px;
@@ -143,44 +162,55 @@ footer {
     background-position: 20% center;
     padding: 30px 20px 0 20px;
   }
+
   .content {
     width: 400px;
+
     & img {
       content: url("../../assets/images/footertextmob.svg");
     }
   }
+
   .hidden {
     transform: translateX(0);
   }
+
   .footer__video {
     justify-content: end;
     margin-top: 0px;
+
     & video {
       width: 400px;
       height: auto;
     }
   }
 }
+
 @media (max-width: 1050px) {
   .footer__section {
     background-position: center bottom;
     background-image: url("../../assets/images/footerbackImg.jpg");
   }
+
   .footer__video {
     margin-top: 0px;
+
     & video {
       width: 300px;
       height: auto;
     }
   }
+
   .footer__flex {
     padding: 30px 30px 0 30px;
+
     & .head__and__text {
       width: 30% !important;
     }
 
     & .icon {
       width: 25%;
+
       & .tele__and__tw {
         display: flex;
         gap: 20px;
@@ -190,6 +220,7 @@ footer {
       & .tele__blok img {
         content: url("../../assets//images/telefootermob.png");
         transform: scale(1);
+
         &:hover {
           transform: scale(1.2);
         }
@@ -198,15 +229,17 @@ footer {
       & .twitter__blok img {
         content: url("../../assets//images/twfootermob.png");
         transform: scale(1);
+
         &:hover {
           transform: scale(1.2);
         }
       }
     }
   }
+
   .copyright {
     justify-content: center;
-    padding: 24px 30px 30px 0;
+    padding: 0px 30px 30px 0;
     font-size: 18px;
   }
 }
@@ -215,18 +248,44 @@ footer {
   .footer__section {
     background-position: 80%;
   }
+
   .content {
     width: 327px;
   }
+
   .footer__video {
     justify-content: center;
+
     & video {
       width: 370px;
     }
   }
+
   .footer__flex {
     & .head__and__text {
       width: 50% !important;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .footer__section {
+    height: calc((900/1440)*100vw);
+    background-image: url("../../assets/images/footersectionImg.jpg");
+    position: relative;
+  }
+
+  .animation_data {
+    position: absolute;
+    right: 2vw;
+    top:8vw;
+    height: 50vw;
+    width: 35vw;
+  }
+  .content {
+    
+    & img {
+      content: url("../../assets/images/it_is_time_desktop.png");
     }
   }
 }

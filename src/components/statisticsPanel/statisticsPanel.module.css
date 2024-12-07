@@ -370,7 +370,7 @@
     flex-direction: column;
     align-items: center;
     width: 340px;
-    gap:calc((32 / 379)* 100vw);
+    gap:calc((28 / 379)* 100vw);
     margin-top: calc((330 / 379)* 100vw);
   }
   .copy {
