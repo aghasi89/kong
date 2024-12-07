@@ -12,7 +12,7 @@ function App() {
       preloader.style.display = "none";
       document.body.style.overflow = "auto"
 
-    }, 3000);
+    }, 30000);
   }, []);
   const lottieOptions = {
     loop: true,
